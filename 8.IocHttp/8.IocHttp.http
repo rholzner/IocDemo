@@ -1,0 +1,6 @@
+@_8.IocHttp_HostAddress = http://localhost:5157
+
+GET {{_8.IocHttp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
