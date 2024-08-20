@@ -16,6 +16,7 @@ Console.WriteLine("halloo");
 using (var lvls = serviceProvider.GetService<FirstLevel>())
 {
     Console.WriteLine("halloo 1");
+    Console.WriteLine(lvls.Name);
 }
 
 Console.WriteLine("Bye, World!");
@@ -33,4 +34,6 @@ public class FirstLevel : IDisposable
         Console.WriteLine("FirstLevel disposed");
     }
 
+
+    public string Name => "Robin";
 }
